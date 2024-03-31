@@ -1,3 +1,7 @@
+package operations_analyzer;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -10,7 +14,7 @@ public class My_Own_Analyser {
 
     private static final String Resource = "./data/";
     // arrs example in Function main -> (String[] args)
-    public static void main(final String[] args) throws IOException, CsvException{
+    public static void main(final String[] args) throws IOException {
 
         // Main idea - get information about operations with name of file
 
@@ -48,7 +52,24 @@ public class My_Own_Analyser {
     }
     */
 
-    public static void Reader_For_CSV() throws IOException, CsvException{
+    public static void Reader_For_CSV(Path path) throws IOException {
+
+        String file = path.toString;
+        BufferedReader reader = null;
+        String line = "";
+
+        try{
+            reader = new BufferedReader(new FileReader(file));
+
+        while ((line = reader.readLine()) != null){
+
+            }
+
+        }catch (Exception e){
+
+        }finally {
+
+        }
 
     }
 
