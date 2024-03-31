@@ -8,8 +8,14 @@ import java.util.Scanner;
 
 public class My_Own_Analyser {
 
+    private static final String Resource = "./data/";
     // arrs example in Function main -> (String[] args)
-    public static void main(final String[] args){
+    public static void main(final String[] args) throws IOException, CsvException{
+
+        // Main idea - get information about operations with name of file
+
+        final Path to_file = Paths.get(Resource + args[0]);
+        /*
 
         try{
             System.out.println(args[0]);
@@ -28,7 +34,7 @@ public class My_Own_Analyser {
 
 
         }
-
+        */
 
     }
 
@@ -41,6 +47,10 @@ public class My_Own_Analyser {
         System.out.println(strings);
     }
     */
+
+    public static void Reader_For_CSV() throws IOException, CsvException{
+
+    }
 
     public static int vargs_example(int ... n){
         int sum = 0;
